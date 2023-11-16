@@ -32,7 +32,7 @@ import androidx.compose.ui.unit.dp
 fun HomeScreen(
     viewModel: HomeScreenViewModel
 ) {
-    val usdState = viewModel.usdState.collectAsState()
+    val usdValueState = viewModel.usdValueState.collectAsState()
 
     var pesosInput: String by remember { mutableStateOf("") }
 
@@ -75,7 +75,7 @@ fun HomeScreen(
 
             Button(
                 modifier = Modifier.weight(1f),
-                onClick = { viewModel.onConvertPesosToUsd(pesos = pesosInput.toDoubleOrNull() ?: 0.0 ) }
+                onClick = { viewModel.convertPesosToUsd(pesos = pesosInput.toDoubleOrNull() ?: 0.0 ) }
             ) {
                 Text("Calcular")
             }
@@ -87,7 +87,7 @@ fun HomeScreen(
                 .padding(vertical = 12.dp),
             horizontalArrangement = Arrangement.Center
         ) {
-            Text(text = "US$ ${usdState.value}")
+            Text(text = "US$ ${usdValueState.value}")
         }
     }
 }

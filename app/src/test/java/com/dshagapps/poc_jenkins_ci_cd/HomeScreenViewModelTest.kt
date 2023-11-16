@@ -21,12 +21,12 @@ class HomeScreenViewModelTest {
 
     @Test
     fun `se convierten 365,5 pesos a 1 dolar oficial`() {
-        val pesos = 365.5
-        val esperado = 1.0
+        val pesosToConvert = 365.5
+        val expected = 1.0
 
-        homeScreenViewModel.onConvertPesosToUsd(pesos)
+        homeScreenViewModel.convertPesosToUsd(pesosToConvert)
 
-        Assert.assertEquals(esperado, homeScreenViewModel.usdState.value, 0.01)
+        Assert.assertEquals(expected, homeScreenViewModel.usdValueState.value, 0.01)
     }
 
 }

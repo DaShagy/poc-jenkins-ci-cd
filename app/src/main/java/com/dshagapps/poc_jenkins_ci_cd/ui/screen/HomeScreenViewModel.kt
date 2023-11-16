@@ -5,7 +5,7 @@ import kotlinx.coroutines.flow.MutableStateFlow
 
 class HomeScreenViewModel : ViewModel() {
 
-    val usdState: MutableStateFlow<Double> = MutableStateFlow(0.0)
+    val usdValueState: MutableStateFlow<Double> = MutableStateFlow(0.0)
 
-    fun onConvertPesosToUsd(pesos: Double) { usdState.value = pesos / 365.5 }
+    fun convertPesosToUsd(pesos: Double) { usdValueState.value = pesos / 365.5 }
 }
