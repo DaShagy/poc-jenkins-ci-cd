@@ -15,6 +15,8 @@ class MainActivity : ComponentActivity() {
 
     private val homeScreenViewModel by lazy { HomeScreenViewModel() }
 
+    //another test
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
