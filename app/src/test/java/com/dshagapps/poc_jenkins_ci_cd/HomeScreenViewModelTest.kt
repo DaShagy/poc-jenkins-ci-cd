@@ -15,8 +15,8 @@ class HomeScreenViewModelTest {
     var rule: TestRule = InstantTaskExecutorRule()
 
     @Test
-    fun `se convierten 365,5 pesos a 1 dolar oficial`() {
-        val pesosToConvert = 365.5
+    fun `se convierten 370,0 pesos a 1 dolar oficial`() {
+        val pesosToConvert = 370.0
         val expected = 1.0
 
         homeScreenViewModel.convertPesosToUsd(pesosToConvert)
