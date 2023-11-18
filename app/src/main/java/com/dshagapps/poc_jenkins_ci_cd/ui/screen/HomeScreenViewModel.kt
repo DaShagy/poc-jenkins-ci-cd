@@ -7,5 +7,7 @@ class HomeScreenViewModel : ViewModel() {
 
     val usdValueState: MutableStateFlow<Double> = MutableStateFlow(0.0)
 
+    //adding a comment to test webhook and jenkins
+
     fun convertPesosToUsd(pesos: Double) { usdValueState.value = pesos / 365.5 }
 }
