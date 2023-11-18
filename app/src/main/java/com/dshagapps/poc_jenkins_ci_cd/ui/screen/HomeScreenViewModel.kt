@@ -9,5 +9,5 @@ class HomeScreenViewModel : ViewModel() {
 
     //adding a comment to test webhook and jenkins
 
-    fun convertPesosToUsd(pesos: Double) { usdValueState.value = pesos / 365.5 }
+    fun convertPesosToUsd(pesos: Double) { usdValueState.value = pesos / 370.0 }
 }
