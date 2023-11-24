@@ -7,5 +7,5 @@ class HomeScreenViewModel : ViewModel() {
 
     val usdValueState: MutableStateFlow<Double> = MutableStateFlow(0.0)
 
-    fun convertPesosToUsd(pesos: Double) { usdValueState.value = pesos / 370 }
+    fun convertPesosToUsd(pesos: Double) { usdValueState.value = pesos / 371 }
 }
